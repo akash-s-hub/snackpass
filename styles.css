@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.page1 {
+  height: 45vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    at top left,
+    #092844,
+    #1d0c46,
+    #24001c,
+    #000000,
+    #000000,
+    #000000,
+    #000000
+  );
+
+  header {
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      height: 25px;
+      width: 25px;
+      border-radius: 5px;
+    }
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 65px;
+
+    span {
+      font-weight: 700;
+      background: linear-gradient(
+        to right,
+        #c1f3ec,
+        #96f7f1,
+        #9cd4f2,
+        #f598ed,
+        #cec8f4,
+        #c6f5ec,
+        #ffffff
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}
+
+.page2 {
+  height: 55vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+
+  p {
+    padding: 1rem 15rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  button {
+    margin-top: 4rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 0.65rem;
+    padding: 5px 10px;
+    font-weight: 600;
+
+    i {
+      padding-left: 3px;
+    }
+  }
+}
+
+.page3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+.page4 {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+  .top-part {
+    height: 40%;
+
+    .feature {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 1rem;
+      font-weight: 700;
+    }
+
+    .line1 {
+      height: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .imgContainer {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img#forbes {
+          object-fit: cover;
+          height: 70%;
+          width: 70%;
+        }
+        img#fortune {
+          object-fit: contain;
+          height: 80%;
+          width: 80%;
+        }
+        img#insider {
+          height: 60%;
+          width: 60%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .line2 {
+      height: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .imgContainer {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img#wsj {
+          object-fit: contain;
+          height: 100%;
+          width: 100%;
+        }
+        img#qsr {
+          height: 100%;
+          width: 35%;
+          object-fit: cover;
+        }
+        img#techcrunch {
+          height: 60%;
+          width: 60%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .bottom-part {
+    height: 60%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 0.7rem;
+      padding: 2rem 20rem;
+      text-align: center;
+    }
+  }
+}
