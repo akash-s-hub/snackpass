@@ -13,6 +13,10 @@ body {
   width: 100%;
 }
 
+body {
+  background-color: black;
+}
+
 .page1 {
   height: 45vh;
   color: white;
@@ -31,17 +35,48 @@ body {
 
   header {
     padding: 10px 30px;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: white;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
 
-    img {
-      height: 25px;
-      width: 25px;
-      border-radius: 5px;
+    .pageIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      img {
+        height: 25px;
+        width: 25px;
+        border-radius: 5px;
+      }
+    }
+
+    .navlinks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .items,
+      button {
+        cursor: pointer;
+      }
+
+      button {
+        border-radius: 10px;
+        cursor: pointer;
+        background: #0099ff;
+
+        color: white;
+        border: none;
+        outline: none;
+        font-size: 0.65rem;
+        padding: 5px 10px;
+        font-weight: 600;
+      }
     }
   }
 
@@ -107,20 +142,31 @@ body {
 }
 
 .page3 {
-  height: 100%;
+  height: 80%;
   width: 100%;
+  padding: 1rem 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   background-color: black;
 
   img {
-    height: 80%;
-    width: 80%;
+    height: 85%;
+    width: 55%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+  }
+  .message {
+    color: white;
+    font-size: 0.8rem;
   }
 }
 
 .page4 {
+  padding-top: 2rem;
   height: 100%;
   width: 100%;
   background-color: black;
@@ -151,8 +197,8 @@ body {
 
         img#forbes {
           object-fit: cover;
-          height: 70%;
-          width: 70%;
+          height: 60%;
+          width: 50%;
         }
         img#fortune {
           object-fit: contain;
@@ -160,7 +206,7 @@ body {
           width: 80%;
         }
         img#insider {
-          height: 60%;
+          height: 70%;
           width: 60%;
           object-fit: cover;
         }
@@ -200,7 +246,7 @@ body {
   }
 
   .bottom-part {
-    height: 60%;
+    height: 50%;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -212,5 +258,201 @@ body {
       padding: 2rem 20rem;
       text-align: center;
     }
+  }
+}
+
+.page5 {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+
+  .heading {
+    height: 10%;
+  }
+  .line1 {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+  }
+  .line2 {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+  }
+}
+
+.page6 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 0 7.5rem;
+
+  .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    gap: 2rem;
+
+    h1,
+    h3 {
+      width: 100%;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: 66px;
+      line-height: 73px;
+    }
+
+    h3 {
+      font-size: 23px;
+      line-height: 35px;
+    }
+  }
+
+  .right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+
+      input {
+        height: 2rem;
+        width: 70%;
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+      }
+
+      button {
+        height: 2rem;
+        width: 70%;
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        background-color: #0099ff;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.page7 {
+  height: 50%;
+  width: 100%;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  background-color: black;
+  color: white;
+  border-top: 1px solid white;
+  .part1,
+  .part2,
+  .part3 {
+    width: 30%;
+
+    h5 {
+      font-size: 1.2rem;
+      padding-bottom: 0.7rem;
+      font-weight: 600;
+    }
+    h6 {
+      width: fit-content;
+      padding-bottom: 0.3rem;
+      font-size: 0.7rem;
+      font-weight: 400;
+      cursor: pointer;
+    }
+    h6:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.page8 {
+  height: 10%;
+  width: 80%;
+  border-top: 1px solid white;
+  margin: auto;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .part1,
+  .part2,
+  .part3 {
+    width: 30%;
+    height: 100%;
+    text-align: end;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .part1 {
+    justify-content: start;
+  }
+
+  .part2 h6 {
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .part2 h6:hover {
+    text-decoration: underline;
+  }
+
+  .part3 {
+    gap: 0.5rem;
+  }
+
+  .part3 h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .part3 h6:hover {
+    border: 1px solid white;
+    transition: all 1s ease-in-out;
+  }
+
+  .part3 h6 i {
+    font-size: 1rem;
+    padding: 0.3rem;
   }
 }
